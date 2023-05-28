@@ -61,10 +61,7 @@
         </div>
       </aside>
       <main>
-        <h1>Home</h1>
-        <div class="date">
-          <span>9/5/2023</span>
-        </div>
+        <h1>Mohamed Hassan</h1>
         <div class="accounts-balance">
           <div class="balance">
             <span class="material-symbols-outlined">
@@ -151,39 +148,10 @@
         </div>
       </main>
       <div class="right">
-        <div class="item send-announcment">
-          <span class="material-symbols-outlined">campaign</span>
-          <h3><a href="#" onclick="sendAnnouncementOpen()">Send Announcement</a></h3>
-        </div>
-      </div>
+        
+
     </div>
     
-    <div class="popUp-send-Announcements" id="send-announcment-popup">
-      <label for="Reminder">Close Bank Account</label>
-      <select>
-        <option value="option1">All Clients</option>
-        <option value="option2">VIP Clients</option>
-        <option value="option3">Normal Clients</option>
-      </select>
-      <div class="description">
-        <input type="text" placeholder="Announcement" id="closeBankPassword"/>
-      </div>
-      <div class="close-button">
-        <button id="close-btn-popup-closeBankAccount" onclick="closeSendAnnouncement()">Close</button>
-      </div>
-      <div class="close-BankAccount-btn">
-        <button id="setReminder-btn" onclick="sendAnnouncement()">Send Announcement</button>
-      </div>
-    </div>
-
-
-    <div class="popupSendAnnouncementSuccess" id="SendAnnouncementSuccess">
-      <h1>Announcement Send successfully</h1>
-      <div class="close">
-        <button onclick="closeSendAnnouncementSuccess()" id="closeSuccess"><h3>Close</h3></button>
-      </div>
-    </div>
-
     <script>
       function checkCredentials(){
         if(sessionStorage["username"] == null)
@@ -191,32 +159,7 @@
           window.location.href = "login.html";
         }
       }
-      function sendAnnouncementOpen(){
-        var blur = document.getElementById('blur');
-        blur.classList.toggle('active')
-        var popup = document.getElementById('send-announcment-popup');
-        popup.classList.toggle('active')
-      }
-     function closeSendAnnouncement(){
-        var blur = document.getElementById('blur');
-        blur.classList.toggle('active')
-        var popup = document.getElementById('send-announcment-popup');
-        popup.classList.toggle('active')
-     }
-     function sendAnnouncement(){
-        
-        var popup = document.getElementById('SendAnnouncementSuccess');
-        popup.classList.toggle('active')
-        var popup = document.getElementById('send-announcment-popup');
-        popup.classList.toggle('active')
-     }
-     function closeSendAnnouncementSuccess(){
       
-        var blur = document.getElementById('blur');
-        blur.classList.toggle('active')
-        var popup = document.getElementById('SendAnnouncementSuccess');
-        popup.classList.toggle('active')
-     }
     </script>
   </body>
 </html>
