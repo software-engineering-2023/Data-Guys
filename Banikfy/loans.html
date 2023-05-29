@@ -62,7 +62,7 @@
       </aside>
       <main>
         <div class="list-of-loans">
-          <div class="loan">
+          <div class="loan" onclick="showtable1()">
             <span class="material-symbols-outlined">
               local_atm
               </span>
@@ -75,7 +75,7 @@
               </div>
             </div>
           </div>
-          <div class="loan">
+          <div class="loan" onclick="showtable2()">
             <span class="material-symbols-outlined">
               local_atm
               </span>
@@ -88,7 +88,7 @@
               </div>
             </div>
           </div>
-          <div class="loan">
+          <div class="loan" onclick="showtable3()">
             <span class="material-symbols-outlined">
               local_atm
               </span>
@@ -102,7 +102,7 @@
             </div>
           </div>
         </div>
-        <div class = "loans-table">
+        <div class = "loans-table" id="loansTable1">
           <h2>Loans installments schedule</h2>
           <table>
             <thead>
@@ -167,6 +167,140 @@
           <a href="#" class="showall">Show All</a>
         </div>
         
+
+        <!--Table2-->
+        <div class = "loans-table" id="loansTable2">
+          <h2>Loans installments schedule</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Payment Date</th>
+                <th>Payment</th>
+                <th>Principal<thd>
+                <th>Interest</th>
+                <th>Total Interest</th>
+                <th>Balance</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mar 2019</td>
+                <td>$836.03</td>
+                <td>$218.10</td>
+                <td>$617.94</td>
+                <td>$1,36.69</td>
+                <td>$164,564.62</td>
+                <td><a href="#"class="primary">Details</a></td>
+              </tr>
+              <tr>
+                <td>Apr 2019</td>
+                <td>$836.03</td>
+                <td>$218.91</td>
+                <td>$617.12</td>
+                <td>$1,853.80</td>
+                <td>$164,345.71</td>
+                <td><a href="#"class="primary">Details</a></td>
+              </tr>
+              <tr>
+                <td>May 2019</td>
+                <td>$836.03</td>
+                <td>$219.73</td>
+                <td>$616.30</td>
+                <td>$2,470.10</td>
+                <td>$164,15.98</td>
+                <td><a href="#"class="primary">Details</a></td>
+              </tr>
+              <tr>
+                <td>Jun 2019</td>
+                <td>$836.03</td>
+                <td>$20.56</td>
+                <td>$615.47</td>
+                <td>$3,085.57</td>
+                <td>$163,905.42</td>
+                <td><a href="#"class="primary">Details</a></td>
+              </tr>
+              <tr>
+                <td>Jul 2019</td>
+                <td>$836.03</td>
+                <td>$221.39</td>
+                <td>$614.65</td>
+                <td>$3,700.22</td>
+                <td>$163,684.03</td>
+                <td><a href="#"class="primary">Details</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#" class="showall">Show All</a>
+        </div>
+
+
+        <!--Table3-->
+        <div class = "loans-table" id="loansTable3">
+          <h2>Loans installments schedule</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Payment Date</th>
+                <th>Payment</th>
+                <th>Principal<thd>
+                <th>Interest</th>
+                <th>Total Interest</th>
+                <th>Balance</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mar 2019</td>
+                <td>$836.03</td>
+                <td>$218.10</td>
+                <td>$617.94</td>
+                <td>$1,36.69</td>
+                <td>$164,564.62</td>
+                <td><a href="#"class="primary">Details</a></td>
+              </tr>
+              <tr>
+                <td>Apr 2019</td>
+                <td>$836.03</td>
+                <td>$218.91</td>
+                <td>$617.12</td>
+                <td>$1,853.80</td>
+                <td>$164,345.71</td>
+                <td><a href="#"class="primary">Details</a></td>
+              </tr>
+              <tr>
+                <td>May 2019</td>
+                <td>$836.03</td>
+                <td>$219.73</td>
+                <td>$616.30</td>
+                <td>$2,470.10</td>
+                <td>$164,15.98</td>
+                <td><a href="#"class="primary">Details</a></td>
+              </tr>
+              <tr>
+                <td>Jun 2019</td>
+                <td>$836.03</td>
+                <td>$20.56</td>
+                <td>$615.47</td>
+                <td>$3,085.57</td>
+                <td>$163,905.42</td>
+                <td><a href="#"class="primary">Details</a></td>
+              </tr>
+              <tr>
+                <td>Jul 2019</td>
+                <td>$836.03</td>
+                <td>$221.39</td>
+                <td>$614.65</td>
+                <td>$3,700.22</td>
+                <td>$163,684.03</td>
+                <td><a href="#"class="primary">Details</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#" class="showall">Show All</a>
+        </div>
+
       </main>
       <div class="right">
         <div class="item applyForLoan">
@@ -260,6 +394,48 @@
         blur.classList.toggle('active')
         var OpenBankAccountSuccess = document.getElementById('OpenBankAccountSuccess');
         OpenBankAccountSuccess.classList.toggle('active')
+      }
+      function showtable1(){
+        var loansTable1 = document.getElementById('loansTable1');
+        loansTable1.classList.toggle('active')
+        var element = document.getElementById("loansTable2");
+        var element2 = document.getElementById("loansTable3");
+        if(element.classList.contains("active"))
+        {
+          element.classList.toggle('active')
+        }
+        if(element2.classList.contains("active"))
+        {
+          element2.classList.toggle('active')
+        }
+      }
+      function showtable2(){
+        var loansTable2 = document.getElementById('loansTable2');
+        loansTable2.classList.toggle('active')
+        var element = document.getElementById("loansTable1");
+        var element2 = document.getElementById("loansTable3");
+        if(element.classList.contains("active"))
+        {
+          element.classList.toggle('active')
+        }
+        if(element2.classList.contains("active"))
+        {
+          element2.classList.toggle('active')
+        }
+      }
+      function showtable3(){
+        var loansTable3 = document.getElementById('loansTable3');
+        loansTable3.classList.toggle('active')
+        var element = document.getElementById("loansTable2");
+        var element2 = document.getElementById("loansTable1");
+        if(element.classList.contains("active"))
+        {
+          element.classList.toggle('active')
+        }
+        if(element2.classList.contains("active"))
+        {
+          element2.classList.toggle('active')
+        }
       }
     </script>
   </body>
