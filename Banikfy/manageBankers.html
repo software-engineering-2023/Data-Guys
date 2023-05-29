@@ -103,7 +103,7 @@
           <button id="confirmApplication-btn" onclick="ConfirmPopUp()">Confirm</button>
         </div>
   
-      </div>
+    </div>
     
 
       <div class="block-Banker" id="Blockpopup">
@@ -136,6 +136,59 @@
         </div>
       </div>
 
+
+      <div class="Add-Client" id="addClientPopup">
+        <label for="Nationalid">National Id</label>
+        <input type="text" placeholder="National Id" />
+  
+        <label for="Name">Name</label>
+        <input type="number" placeholder="Name" />
+  
+        <label for="Name">Phone</label>
+        <input type="text" placeholder="Phone" />
+  
+        <label for="email">Email</label>
+        <input type="email" placeholder="email" />
+
+        <div class="close-button">
+          <button id="close-button-popUP" onclick="closeAddClientPopUp()">Close</button>
+        </div>
+        <div class="confirm-Application-btn">
+          <button id="confirmApplication-btn" onclick="confirmAddClientPopUp()">Add Client</button>
+        </div>
+      </div>
+
+      <div class="block-Client" id="blockClientPopup">
+        <label for="Name">National ID</label>
+        <input type="number" placeholder="National ID" />
+
+        <label for="Name">Client Name</label>
+        <input type="number" placeholder="Name" />
+  
+        <label for="phone">Account Number</label>
+        <input type="text" placeholder="Account Number" />
+
+        <div class="close-button">
+          <button id="close-button-popUP" onclick="closeBlockClientPopUp()">Close</button>
+        </div>
+        <div class="confirm-Application-btn">
+          <button id="confirmApplication-btn" onclick="confirmBlockClientPopUp()">Block Client</button>
+        </div>
+      </div>
+
+      <div class="add-client-sucess" id="addClientpopupSuccess">
+        <h1>Client Added successfully</h1>
+        <div class="close">
+          <button onclick="closeAddClientSuccess()" id="closeSuccess"><h3>Close</h3></button>
+        </div>
+      </div>
+
+      <div class="block-client-sucess" id="blockClientpopupSuccess">
+        <h1>Client Blocked successfully</h1>
+        <div class="close">
+          <button onclick="closeBlockClientSuccess()" id="closeSuccess"><h3>Close</h3></button>
+        </div>
+      </div>
 
     <script>
       function checkCredentials(){
@@ -188,6 +241,56 @@
         blur.classList.toggle('active')
         var popup = document.getElementById('addpopupSuccess');
         popup.classList.toggle('active')
+      }
+      function Addnewclientpopup(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active');
+        var popup = document.getElementById('addClientPopup');
+        popup.classList.toggle('active')
+      }
+      function closeAddClientPopUp(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active');
+        var popup = document.getElementById('addClientPopup');
+        popup.classList.toggle('active');
+      }
+      function confirmAddClientPopUp(){
+        var popup = document.getElementById('addClientPopup');
+        popup.classList.toggle('active');
+        var popup = document.getElementById('addClientpopupSuccess');
+        popup.classList.toggle('active');
+      }
+      function closeAddClientSuccess(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active');
+        var popup = document.getElementById('addClientpopupSuccess');
+        popup.classList.toggle('active');
+      }
+      function blockclientpopup(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active');
+        var popup = document.getElementById('blockClientPopup');
+        popup.classList.toggle('active')
+      }
+      function closeBlockClientPopUp()
+      {
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active');
+        var popup = document.getElementById('blockClientPopup');
+        popup.classList.toggle('active');
+      }
+      function confirmBlockClientPopUp(){
+        var popup = document.getElementById('blockClientPopup');
+        popup.classList.toggle('active');
+        var popup = document.getElementById('blockClientpopupSuccess');
+        popup.classList.toggle('active');
+      }
+      function closeBlockClientSuccess(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active');
+
+        var popup = document.getElementById('blockClientpopupSuccess');
+        popup.classList.toggle('active');
       }
     </script>
   </body>

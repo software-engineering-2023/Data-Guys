@@ -537,3 +537,235 @@ main .block-client{
 main .block-client div{
     display: flex;
 }
+
+
+
+#addClientPopup{
+    border-radius: var(--card-border-radius);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    
+    background: var(--color-background);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#addClientPopup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s ;
+}
+
+.Add-Client label{
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.Add-Client input {
+    display: block;
+    color: white;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.Add-Client .close-button button {
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    
+    transition: all 300ms ease;
+    width: 70%;
+    margin-top: 0.9rem;
+    margin-left: 5.5rem;
+    border: 2px solid;
+}
+
+.Add-Client .close-button button:hover {
+    background-color: var(--color-danger);
+}
+
+.Add-Client .confirm-Application-btn button {
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    
+    transition: all 300ms ease;
+    width: 70%;
+    margin-top: 0.9rem;
+    margin-left: 5.5rem;
+    border: 2px solid;
+}
+
+.Add-Client .confirm-Application-btn button:hover {
+    background-color: var(--color-success);
+}
+
+
+
+#addClientpopupSuccess{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    
+    background: var(--color-background);
+    border-radius: var(--card-border-radius);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#addClientpopupSuccess.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s ;
+}
+.add-client-sucess h1{
+    margin-left: 1.8rem;
+    margin-bottom: 1rem;
+}
+.add-client-sucess button{
+    
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    
+    transition: all 300ms ease;
+    width: 70%;
+    margin-top: 0.5rem;
+    margin-left: 2.5rem;
+    border: 2px solid;
+}
+.add-client-sucess button:hover{
+    background-color: var(--color-success);
+}
+
+
+
+
+
+#blockClientPopup{
+    border-radius: var(--card-border-radius);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    
+    background: var(--color-background);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#blockClientPopup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s ;
+}
+
+.block-Client label{
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.block-Client input {
+    display: block;
+    color: white;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.block-Client .close-button button {
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    
+    transition: all 300ms ease;
+    width: 70%;
+    margin-top: 0.9rem;
+    margin-left: 5.5rem;
+    border: 2px solid;
+}
+
+.block-Client .close-button button:hover {
+    background-color: var(--color-danger);
+}
+
+.block-Client .confirm-Application-btn button {
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    
+    transition: all 300ms ease;
+    width: 70%;
+    margin-top: 0.9rem;
+    margin-left: 5.5rem;
+    border: 2px solid;
+}
+
+.block-Client .confirm-Application-btn button:hover {
+    background-color: var(--color-success);
+}
+
+
+
+#blockClientpopupSuccess{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    
+    background: var(--color-background);
+    border-radius: var(--card-border-radius);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#blockClientpopupSuccess.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s ;
+}
+.block-client-sucess h1{
+    margin-left: 1.8rem;
+    margin-bottom: 1rem;
+}
+.block-client-sucess button{
+    
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    
+    transition: all 300ms ease;
+    width: 70%;
+    margin-top: 0.5rem;
+    margin-left: 2.5rem;
+    border: 2px solid;
+}
+.block-client-sucess button:hover{
+    background-color: var(--color-success);
+}
