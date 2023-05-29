@@ -147,6 +147,12 @@
           sessionStorage["password"] = password;
           window.location.href = "bankerHome.html";
         }
+        else if(username == "admin" && password == "admin")
+        {
+          sessionStorage["username"] = username;
+          sessionStorage["password"] = password;
+          window.location.href = "adminHome.html";
+        }
         else
         {
           const errorMessage = document.getElementById("error-message");
