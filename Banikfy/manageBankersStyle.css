@@ -509,3 +509,31 @@ main .block div{
 .add-Banker-sucess button:hover{
     background-color: var(--color-success);
 }
+
+main .open-client{
+    margin-top: 8rem;
+    margin-left: 10rem;
+    background-color: transparent;
+    border: 2px dashed var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .open-client div{
+    display: flex;
+}
+
+main .block-client{
+    margin-top: -5.5rem;
+    margin-left: 50rem;
+    background-color: transparent;
+    border: 2px dashed var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .block-client div{
+    display: flex;
+}
