@@ -88,7 +88,7 @@
           <button id="close-button-popUP" onclick="closePopUp()">Close</button>
         </div>
         <div class="confirm-Application-btn">
-          <button id="confirmApplication-btn" onclick="closePopUp()">Confirm</button>
+          <button id="confirmApplication-btn" onclick="ConfirmPopUp()">Confirm</button>
         </div>
   
       </div>
@@ -105,10 +105,24 @@
           <button id="close-button-popUP" onclick="closeBlockPopUp()">Close</button>
         </div>
         <div class="confirm-Application-btn">
-          <button id="confirmApplication-btn" onclick="closeBlockPopUp()">Confirm</button>
+          <button id="confirmApplication-btn" onclick="confirmBlockPopUp()">Confirm</button>
         </div>
       </div>
 
+
+      <div class="block-Banker-sucess" id="BlockpopupSuccess">
+        <h1>Banker Blocked successfully</h1>
+        <div class="close">
+          <button onclick="closeBlockSuccess()" id="closeSuccess"><h3>Close</h3></button>
+        </div>
+      </div>
+
+      <div class="add-Banker-sucess" id="addpopupSuccess">
+        <h1>Banker Added successfully</h1>
+        <div class="close">
+          <button onclick="closeAddSuccess()" id="closeSuccess"><h3>Close</h3></button>
+        </div>
+      </div>
 
 
     <script>
@@ -134,6 +148,33 @@
         var blur = document.getElementById('blur');
         blur.classList.toggle('active')
         var popup = document.getElementById('Blockpopup');
+        popup.classList.toggle('active')
+      }
+      function confirmBlockPopUp(){
+        var popup = document.getElementById('Blockpopup');
+        popup.classList.toggle('active')
+        var popup = document.getElementById('BlockpopupSuccess');
+        popup.classList.toggle('active')
+      }
+      function closeBlockSuccess(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active')
+        var popup = document.getElementById('BlockpopupSuccess');
+        popup.classList.toggle('active')
+      }
+      function ConfirmPopUp(){
+        
+        var popup = document.getElementById('popup');
+        popup.classList.toggle('active')
+        
+        var popup = document.getElementById('addpopupSuccess');
+        popup.classList.toggle('active')
+      }
+      function closeAddSuccess(){
+        
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active')
+        var popup = document.getElementById('addpopupSuccess');
         popup.classList.toggle('active')
       }
     </script>

@@ -426,3 +426,86 @@ main .block div{
 .Add-Banker select option{
     color: #080710;
 }
+
+
+
+#BlockpopupSuccess{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    
+    background: var(--color-background);
+    border-radius: var(--card-border-radius);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#BlockpopupSuccess.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s ;
+}
+.block-Banker-sucess h1{
+    margin-left: 1.8rem;
+    margin-bottom: 1rem;
+}
+.block-Banker-sucess button{
+    
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    
+    transition: all 300ms ease;
+    width: 70%;
+    margin-top: 0.5rem;
+    margin-left: 2.5rem;
+    border: 2px solid;
+}
+.block-Banker-sucess button:hover{
+    background-color: var(--color-success);
+}
+
+
+
+
+#addpopupSuccess{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    
+    background: var(--color-background);
+    border-radius: var(--card-border-radius);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#addpopupSuccess.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s ;
+}
+.add-Banker-sucess h1{
+    margin-left: 1.8rem;
+    margin-bottom: 1rem;
+}
+.add-Banker-sucess button{
+    
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    
+    transition: all 300ms ease;
+    width: 70%;
+    margin-top: 0.5rem;
+    margin-left: 2.5rem;
+    border: 2px solid;
+}
+.add-Banker-sucess button:hover{
+    background-color: var(--color-success);
+}
