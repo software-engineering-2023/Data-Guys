@@ -328,6 +328,7 @@ main .recent-transactions .showall{
 }
 .right .apply-for-credit-cards{
     background-color: transparent;
+    margin-top: 8rem;
     border: 2px dashed var(--color-primary);
     color: var(--color-primary);
     display: flex;
@@ -335,6 +336,19 @@ main .recent-transactions .showall{
     justify-content: center;
 }
 .right .apply-for-credit-cards div{
+    display: flex;
+}
+
+.right .disable-credit-card{
+    background-color: transparent;
+    margin-top: 5rem;
+    border: 2px dashed var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right .disable-credit-card div{
     display: flex;
 }
 
