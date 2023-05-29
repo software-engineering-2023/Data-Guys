@@ -181,7 +181,7 @@
           <span class="material-symbols-outlined">
             credit_card_off
             </span>
-          <h3><a href="#" onclick="applyForCreditCardopenPopUp()">Apply for Credit Card</a></h3>
+          <h3><a href="#" onclick="disableCreditCardPopUp()">Disable Credit Card</a></h3>
         </div>
       </div>
     </div>
@@ -216,6 +216,33 @@
         <button onclick="closePopUpSuccess()" id="openSuccess"><h3>Close</h3></button>
       </div>
     </div>
+
+
+    <div class="disableCreditCardPopUp" id="disablePopup">
+
+
+      <select>
+        <option value="option1">5482-7423-4079-2246</option>
+        <option value="option2">8949-4651-6548-4871</option>
+      </select>
+
+      <div class="close-button">
+        <button id="close-button-popUP" onclick="closeDisablePopUp()">Close</button>
+      </div>
+      <div class="confirm-Application-btn">
+        <button id="confirmApplication-btn" onclick="confirmCreditCardDisable()">Disable Credit Card</button>
+      </div>
+
+    </div>
+
+
+    <div class="disableCreditSuccessPopUp" id="disableCreditCardSuccessPopUp">
+      <h1>Credit Card Disabled successfully</h1>
+      <div class="close">
+        <button onclick="closeDisablePopUpSuccess()" id="openSuccess"><h3>Close</h3></button>
+      </div>
+    </div>
+
     <script>
       function applyForCreditCardopenPopUp(){
         var blur = document.getElementById('blur');
@@ -252,6 +279,36 @@
       }
       function homepage(){
           window.location.href = "home.html";
+      }
+      function disableCreditCardPopUp(){
+        
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active')
+        var OpenBankAccountSuccess = document.getElementById('disablePopup');
+        OpenBankAccountSuccess.classList.toggle('active')
+      }
+      function closeDisablePopUp(){
+        
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active')
+        var OpenBankAccountSuccess = document.getElementById('disablePopup');
+        OpenBankAccountSuccess.classList.toggle('active')
+      }
+      function confirmCreditCardDisable(){
+        
+        var OpenBankAccountSuccess = document.getElementById('disablePopup');
+        OpenBankAccountSuccess.classList.toggle('active')
+        
+        var OpenBankAccountSuccess = document.getElementById('disableCreditCardSuccessPopUp');
+        OpenBankAccountSuccess.classList.toggle('active')
+      }
+      function closeDisablePopUpSuccess(){
+        
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active')
+        
+        var OpenBankAccountSuccess = document.getElementById('disableCreditCardSuccessPopUp');
+        OpenBankAccountSuccess.classList.toggle('active')
       }
     </script>
   </body>
