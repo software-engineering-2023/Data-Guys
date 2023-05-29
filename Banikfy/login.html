@@ -118,13 +118,14 @@
       <div class="password">
       <input type="password" placeholder="Password" id="password" />
     </div>
-      <a href="#" id="forget"> Forget / Reset Password </a>
+      <a href="#" onclick="resetPassword()"id="forget"> Forget / Reset Password </a>
       <button id="login-btn">Log In</button>
       <div class="signUp">
         <button id="signUp-btn">Sign Up</button>
       </div>
       <p id="error-message" style="color: red; display: none;">Incorrect username or password.</p>
 
+      <p id="error" style="color: red; display: none;">Instructions sent to email</p>
     </form>
 
     <script>
@@ -167,7 +168,11 @@
         
       });
 
-
+      function resetPassword(){
+        
+        const errorMessage = document.getElementById("error");
+          errorMessage.style.display = "block";
+      }
     </script>
   </body>
 </html>

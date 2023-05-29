@@ -154,11 +154,11 @@
                 <small class="blank-text">1 hour ago</small>
             </div>
             <div class="reminder">
-                <p><b>Water Bill is due on 20-5-2023</b></p>
+                <p><b>Credit Card Bill is due on 20-5-2023</b></p>
                 <small class="blank-text">3 hours ago</small>
             </div>
             <div class="reminder">
-                <p><b>Phone Bill is due on 26-5-2023</b></p>
+                <p><b>Loan Bill is due on 26-5-2023</b></p>
                 <small class="blank-text">5 hours ago</small>
             </div>
           </div>
@@ -281,7 +281,7 @@
       }
       function openBankAccountCheck(){
         const password = document.getElementById("openBankPassword").value;
-        if(password == "admin")
+        if(password == "client")
         {
           var popup = document.getElementById('openBankAccountPopup');
           popup.classList.toggle('active')
@@ -316,7 +316,7 @@
       }
       function closeBankAccountCheck(){
         const password = document.getElementById("closeBankPassword").value;
-        if(password == "admin")
+        if(password == "client")
         {
           var popup = document.getElementById('closeBankAccountPopup');
           popup.classList.toggle('active');
@@ -336,7 +336,7 @@
       }
       function displayError(){
         
-        const errorMessage = document.getElementById("error-bank-account");
+          const errorMessage = document.getElementById("error-bank-account");
           errorMessage.style.display = "block";
       }
     </script>
