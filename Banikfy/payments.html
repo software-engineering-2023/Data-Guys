@@ -80,7 +80,6 @@
                 <th>Date</th>
                 <th>Payment Name</th>
                 <th>Amount<thd>
-                <th></th>
               </tr>
             </thead>
             <tbody>
@@ -88,47 +87,41 @@
                 <td>26-5-2023</td>
                 <td>H & M Grand Mall</td>
                 <td>EGP 850</td>
-                <td><a href="#"class="primary">Details</a></td>
               </tr>
               <tr>
                 <td>24-4-2023</td>
                 <td>Bershka City Stars</td>
                 <td>EGP 356.64</td>
-                <td><a href="#"class="primary">Details</a></td>
               </tr>
               <tr>
                 <td>22-4-2023</td>
                 <td>Zara Open Air Mall</td>
                 <td>EGP 845.54</td>
-                <td><a href="#"class="primary">Details</a></td>
               </tr>
               <tr>
                 <td>16-3-2023</td>
                 <td>Water Bill</td>
                 <td>EGP 96.35</td>
-                <td><a href="#"class="primary">Details</a></td>
               </tr>
               <tr>
                 <td>1-3-2023</td>
                 <td>Electricity Bill</td>
                 <td>EGP 5,200</td>
-                <td><a href="#"class="primary">Details</a></td>
               </tr>
               <tr>
                 <td>20-2-2023</td>
                 <td>Stradivarius Cairo Fesival City</td>
                 <td>EGP 2,500</td>
-                <td><a href="#"class="primary">Details</a></td>
               </tr>
               <tr>
                 <td>4-1-2023</td>
                 <td>Shahid </td>
                 <td>EGP 600</td>
-                <td><a href="#"class="primary">Details</a></td>
               </tr>
             </tbody>
           </table>
-          <a href="#" class="showall">Show All</a>
+          <a href="#" onclick="displayError()" class="showall">Show All</a>
+          <p id="error-bank-account" style="color: red; margin-left: 27rem; display: none;">This is all your Payments</p>
         </div>
       </main>
       <div class="right">
@@ -373,6 +366,12 @@
           var OpenBankAccountSuccess = document.getElementById('popupPaymentSuccesse');
           OpenBankAccountSuccess.classList.toggle('active')
         }
+      }
+      
+      function displayError(){
+        
+        const errorMessage = document.getElementById("error-bank-account");
+          errorMessage.style.display = "block";
       }
     </script>
   </body>

@@ -147,7 +147,8 @@
               </tr>
             </tbody>
           </table>
-          <a href="#" class="showall">View other Bank account transactions</a>
+          <a href="#" onclick="displayError()" class="showall">View other Bank account transactions</a>
+          <p id="error-bank-account" style="color: red; margin-left: 22.5rem; display: none;">This is all your bank accounts Transactions</p>
         </div>
       </main>
       <div class="right">
@@ -338,6 +339,11 @@
         blur.classList.toggle('active');
         var closeSuccess =  document.getElementById('CloseBankAccountSuccess');
         closeSuccess.classList.toggle('active');
+      }
+      function displayError(){
+        
+        const errorMessage = document.getElementById("error-bank-account");
+          errorMessage.style.display = "block";
       }
     </script>
   </body>

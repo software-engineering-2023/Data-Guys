@@ -154,7 +154,8 @@
               </tr>
             </tbody>
           </table>
-          <a href="#" class="showall">View other Credit card transactions</a>
+          <a href="#" class="showall" onclick="displayError()">View other Credit card transactions</a>
+          <p id="error-bank-account" style="color: red; margin-left: 22.5rem; display: none;">This is all your Credit Cards Transactions</p>
         </div>
       </main>
       <div class="right">
@@ -309,6 +310,11 @@
         
         var OpenBankAccountSuccess = document.getElementById('disableCreditCardSuccessPopUp');
         OpenBankAccountSuccess.classList.toggle('active')
+      }
+      function displayError(){
+        
+        const errorMessage = document.getElementById("error-bank-account");
+          errorMessage.style.display = "block";
       }
     </script>
   </body>

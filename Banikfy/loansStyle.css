@@ -241,11 +241,11 @@ main .loans-table{
 }
 #loansTable2.active{
     visibility: visible;
-    margin-top: -28rem;
+    margin-top: -24rem;
 }
 #loansTable3.active{
     visibility: visible;
-    margin-top: -56rem;
+    margin-top: -51rem;
 }
 main .loans-table h2{
     margin-bottom: 1rem;
