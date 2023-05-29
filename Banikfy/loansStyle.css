@@ -233,7 +233,19 @@ main .list-of-loans .loan-type .loan-remaining-balance {
 }
 
 main .loans-table{
+    visibility: hidden;
     margin-top: 2rem;
+}
+#loansTable1.active{
+    visibility: visible;
+}
+#loansTable2.active{
+    visibility: visible;
+    margin-top: -28rem;
+}
+#loansTable3.active{
+    visibility: visible;
+    margin-top: -56rem;
 }
 main .loans-table h2{
     margin-bottom: 1rem;
